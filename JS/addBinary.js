@@ -25,7 +25,7 @@ function addBinary(a, b) {
   let sum = "";
   let carry = "";
 
-  for (var i = a.length - 1; i >= 0; i--) {
+  for (let i = a.length - 1; i >= 0; i--) {
     if (i == a.length - 1) {
       //half add the first pair
       const halfAdd1 = halfAdder(a[i], b[i]);

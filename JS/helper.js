@@ -1,8 +1,12 @@
 export function shiftBitToRight(number) {
-  return convertToDecimal(number) >> 1;
+  number = number.split("");
+  let length = number.unshift("0");
+  return number.join("").slice(0, length - 1);
 }
 export function shiftBitToLeft(number) {
-  return convertToDecimal(number) << 1;
+  number = number.split("");
+  number.push("0");
+  return number.join("").slice(1);
 }
 export function getLastBit(number) {
   return number[number.length - 1];
