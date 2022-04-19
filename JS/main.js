@@ -45,7 +45,7 @@ form.onclick = (e) => {
       let copyOfMultipler = multiplier;
       product =
         product.length > NumberOfproductBit
-          ? helper.fixNumberOfBits(product, NumberOfproductBit)
+          ? helper.truncateOverflowBit(product)
           : product;
       product =
         lasBit == 1 ? addBinary(product, multiplicand) : product;

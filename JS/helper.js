@@ -15,7 +15,7 @@ export function convertToDecimal(number) {
   let firstBitPosition = number.length - 1;
   return parseInt(number.slice(1), 2) + -(number[0] * 2 ** firstBitPosition);
 }
-export function fixNumberOfBits(number) {
+export function truncateOverflowBit(number) {
   return (number = number.slice(1));
 }
 /**
